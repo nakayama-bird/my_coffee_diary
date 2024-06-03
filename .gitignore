@@ -43,3 +43,5 @@
 .DS_Store
 /vendor/bundle
 # ここまで追記
+.vscode/
+#VScodeの設定管理対象から外す
