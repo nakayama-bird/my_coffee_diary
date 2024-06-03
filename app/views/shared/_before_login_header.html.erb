@@ -1,0 +1,27 @@
+<header>
+    <div class='navbar bg-base-200'>
+        <div class="flex-1">
+            <div class ='btn btn-ghost text-xl'>
+                <%= link_to 'My Cofee Time', root_path  %>
+            </div>
+        </div>
+        <div class="flex-none">
+            <ul class="menu menu-horizontal px-1 text-xs md:text-base ml-auto">
+                <li>
+                     <%= link_to 'Timeline', '#'  %>
+                </li>
+                <li>
+                    <details>
+                        <summary>
+                            <%= "My Cofee Page" %>
+                        </summary>
+                            <ul class="p-2 bg-base-100 rounded-t-none">
+                                <li><%= link_to 'Login', '#'  %></li>
+                                <li><%= link_to 'SignUp', '#'  %></li>
+                            </ul>
+                    </details>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
