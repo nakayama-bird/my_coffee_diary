@@ -15,9 +15,9 @@
                         <summary>
                             <%= "My Cofee Page" %>
                         </summary>
-                            <ul class="p-2 bg-base-100 rounded-t-none">
-                                <li><%= link_to 'My Cofee Log', '#'  %></li>
-                                <li><%= link_to 'Logout', '#'  %></li>
+                            <ul class="p-3 bg-base-100 rounded-t-none">
+                                <li><%= link_to current_user.name +  "'s Log", '#'  %></li>
+                                <li><%= link_to 'Logout', logout_path, data: { turbo_method: :delete, turbo_confirm: "ログアウトしてもよろしいですか？" }   %></li>
                             </ul>
                     </details>
                 </li>
