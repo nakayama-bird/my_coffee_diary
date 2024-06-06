@@ -50,6 +50,9 @@ gem 'sorcery'
 #internationalization
 gem 'rails-i18n', '~> 7.0.0' 
 
+#testdata
+gem 'faker'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
