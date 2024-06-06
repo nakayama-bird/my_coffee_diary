@@ -7,4 +7,5 @@ class User < ApplicationRecord
 
   validates :email, uniqueness: true, presence: true # emailを入力必須に
   validates :name, presence: true, length: {maximum: 255} #name要素を入力必須、255文字まで。
+  has_many :posts, dependent: :destroy
 end
