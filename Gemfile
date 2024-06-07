@@ -53,6 +53,14 @@ gem 'rails-i18n', '~> 7.0.0'
 #testdata
 gem 'faker'
 
+#upload
+gem 'carrierwave', '~> 3.0'
+gem "mini_magick"
+gem 'fog-aws'
+
+#environment variables
+gem 'dotenv-rails'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 

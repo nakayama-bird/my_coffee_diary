@@ -45,3 +45,7 @@
 # ここまで追記
 .vscode/
 #VScodeの設定管理対象から外す
+/.env
+#環境変数
+/public/uploads/
+#ローカルでのお試し画像データ
