@@ -8,3 +8,9 @@ ja:
         name: 名前
         password: パスワード
         password_confirmation: パスワード確認
+      post:
+        title: タイトル
+        body: 本文
+        drink_time: いつ飲んだ？
+        drink_type: ホット？アイス？
+        post_image: 写真
