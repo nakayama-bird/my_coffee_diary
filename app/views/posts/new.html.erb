@@ -30,13 +30,13 @@
 
           <%= f.label :drink_type, class: "label w-full md:w-1/2 mx-auto" %>
             <div class="mx-auto w-full md:w-1/2 text-center">
-            <div class="vertical-align">
+             <div class="vertical-align">
                 <%= f.radio_button :drink_type,:hot,  class: "radio radio-secondary ml-6"%>
                 <span class="material-icons">coffee</span>
                 <%= f.radio_button :drink_type,:cold, class: "radio radio-primary ml-6" %>
                 <span class="material-icons">ac_unit</span>
              </div>
-          </div>
+            </div>
           
           <%= f.label :post_image, class: "label w-full md:w-1/2 mx-auto" %>
           <%= f.file_field :post_image, class:"file-input file-input-bordered file-input-accent form-control w-full md:w-1/2 mx-auto" %>
