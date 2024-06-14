@@ -57,10 +57,16 @@ gem 'faker'
 gem 'carrierwave', '~> 3.0'
 gem "mini_magick"
 gem 'fog-aws'
-gem "aws-sdk-s3", require: false
+gem "aws-sdk-s3", require: false 
 
 #environment variables
 gem 'dotenv-rails'
+
+#decorator
+gem 'draper'
+
+#pagination
+gem 'kaminari'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
