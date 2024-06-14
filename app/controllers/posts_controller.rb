@@ -41,6 +41,11 @@ class PostsController < ApplicationController
         redirect_to posts_path, success: "投稿を削除しました"
     end
 
+    def myposts
+        @posts = Post.includes(:user).where(user_id: current_user.id).order(created_at: :desc).page params[:page]
+    end
+
+    private
     def post_params
         params.require(:post).permit(:title, :body, :drink_time, :drink_type, :post_image, :post_image_cache )
     end
