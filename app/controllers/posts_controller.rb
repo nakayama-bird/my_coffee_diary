@@ -9,8 +9,9 @@ class PostsController < ApplicationController
 
     def create
         @post = current_user.posts.build(post_params)
+        pp post_params
         if @post.save
-            redirect_to posts_path, success: "投稿に成功しました！ナイスコーヒー！"
+            redirect_to posts_path, data: { action: "modal#open" , "data-modal-open-value": "true"} 
         else
             flash.now[:danger] = "投稿に失敗しました"
             render :new, status: :unprocessable_entity
