@@ -6,8 +6,31 @@
       <p class="py-6"><%= '毎日の生活を彩る漆黒の液体、コーヒー' %></p>
       <p class="py-6"><%= '飲んだコーヒーと今日という日の思い出を振り返ってみましょう' %></p>
       <button class="btn btn-primary">
-        <%= link_to 'はじめてみる', login_path  %>
+        <% if logged_in? %>
+            <%= link_to 'はじめてみる', posts_path  %>
+        <% else %>
+            <%= link_to 'はじめてみる', login_path  %>
+        <% end %>
       </button>
     </div>
   </div>
 </div>
+  <div class="container mx-auto">
+    <p class="text-center font-bold text-3xl mb-12 mt-6"><%= "アプリの使い方☕️" %></p>
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 lg:w-1/2">
+        <p class="text-center font-bold text-lg mb-6"><%= "コーヒーの記録✍️" %></p>
+        <p class="text-center"><%= "今日飲んだコーヒーを記録できます" %></p>
+        <p class="text-center"><%= "一枚パシャリと写真を撮ってさっとメモ" %></p>
+        <p class="text-center"><%= "飲んだ時間帯と温度は直感的に入力可能です" %></p>
+            <%= image_tag "top_new.png"%>
+      </div>
+      <div class="p-4 lg:w-1/2">
+        <p class="text-center font-bold text-lg mb-6"><%= "記録の振り返り🗒️" %></p>
+        <p class="text-center"><%= "過去に飲んだコーヒーを振り返ることができます" %></p>
+        <p class="text-center"><%= "自分で入れたコーヒーなら豆の挽き方" %></p>
+        <p class="text-center"><%= "美味しいお店のコーヒーを思い出すのに便利です" %></p>
+            <%= image_tag "top_mypage.png"%>
+       </div>
+    </div>
+  </div>

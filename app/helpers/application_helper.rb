@@ -7,14 +7,19 @@ module ApplicationHelper
         end
     end
 
+    def page_title(page_title= '')
+        base_title = 'My Coffee Diary'
+        page_title.empty? ? base_title : page_title + ' | ' + base_title
+    end
+
 
     def default_meta_tags
         {
-            site: 'My Coffee Diary',
-            title: '毎日のコーヒーを記録するアプリ',
+            site: '',
+            title: '',
             reverse: true,
             charset: 'utf-8',
-            description: 'My Coffee Timeは今日楽しんだコーヒーを記録するアプリです',
+            description: 'My Coffee Diaryは今日楽しんだコーヒーを記録するアプリです',
             keywords: 'コーヒー,カフェラテ,投稿',
             canonical: request.original_url,
             separator: '|',
