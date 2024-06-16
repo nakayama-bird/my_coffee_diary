@@ -3,3 +3,24 @@ ja:
     label:
       email: メールアドレス
       password: パスワード
+  user_sessions:
+    new:
+      title: ログイン
+  users:
+    new:
+      title: ユーザー登録
+  posts:
+    new:
+      title: 新規投稿
+    show:
+      title: 投稿詳細
+    index:
+      title: タイムライン
+    edit:
+      title: 投稿編集
+    myposts:
+      title: マイログ
+  time:
+    formats:
+      default: "%Y/%m/%d %H:%M"
+      short: "%m/%d %H:%M"

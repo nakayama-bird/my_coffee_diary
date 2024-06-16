@@ -11,9 +11,12 @@
                 </h2>
                 <p><%= post.body.truncate(22) %></p>
                 <div class="card-actions justify-end">
-                <div class="badge badge-outline"><%= post.drink_type %></div> 
-                <div class="badge badge-outline"><%= post.drink_time %></div>
-            </div>
+                    <div class="badge badge-outline"><%= post.drink_type %></div> 
+                    <div class="badge badge-outline"><%= post.drink_time %></div>
+                </div>
+                <div class="card-actions justify-end">
+                    <%= l post.created_at %>
+                </div>
         </div>
     </div>
     <% end %>

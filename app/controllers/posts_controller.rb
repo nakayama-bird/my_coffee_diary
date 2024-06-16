@@ -13,7 +13,7 @@ class PostsController < ApplicationController
         if @post.save
             redirect_to posts_path, data: { action: "modal#open" , "data-modal-open-value": "true"} 
         else
-            flash.now[:danger] = "投稿に失敗しました"
+            flash.now[:alert] = "投稿に失敗しました"
             render :new, status: :unprocessable_entity
         end
     end
@@ -31,7 +31,7 @@ class PostsController < ApplicationController
         if @post.update(post_params)
             redirect_to post_path(post_params), success: "投稿の更新に成功しました！ナイスコーヒー！"
         else
-            flash.now[:danger] = "投稿の更新に失敗しました"
+            flash.now[:alert] = "投稿の更新に失敗しました"
             render :edit, status: :unprocessable_entity
         end
     end
