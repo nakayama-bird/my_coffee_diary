@@ -1,12 +1,12 @@
 <header>
     <div class='navbar bg-base-200'>
         <div class="flex-1">
-            <div class ='btn btn-ghost text-xl'>
+            <div class ='btn btn-ghost text-base md:text-xl'>
                 <%= link_to 'My Coffee Diary', root_path  %>
             </div>
         </div>
         <div class="flex-none">
-            <ul class="menu menu-horizontal px-1 text-xs md:text-base ml-auto">
+            <ul class="menu menu-horizontal px-1 text-xs ms:text-base ml-auto">
                 <li>
                      <%= link_to 'Timeline', posts_path  %>
                 </li>
@@ -15,7 +15,7 @@
                         <summary>
                             <%= "My Coffee Page" %>
                         </summary>
-                            <ul class="p-3 bg-base-100 rounded-t-none">
+                            <ul class="p-2 bg-base-100 rounded-t-none">
                                 <li><%= link_to current_user.name +  "'s Log", myposts_path  %></li>
                                 <li><%= link_to 'Logout', logout_path, data: { turbo_method: :delete, turbo_confirm: "ログアウトしてもよろしいですか？" }   %></li>
                             </ul>
