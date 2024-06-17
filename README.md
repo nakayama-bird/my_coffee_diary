@@ -1,24 +1,28 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# サービス名：My Coffee Diary
+![ogp_page](app/assets/images/ogp.png)
+## サービス概要
+毎日のコーヒーを気軽に記録することができるアプリケーションです。コーヒーの味、その時の気持ち、一緒に飲んだ相手などを写真とともに自由に記録できます。
+## サービスURL
+https://my-coffee-diary-beb5a70ee3d8.herokuapp.com/
+## 機能紹介
+|投稿画面| マイページ |
+|:-:|:-:|
+|![top_new_page](app/assets/images/top_new.png)|![top_new_page](app/assets/images/top_new.png)
+タイトルや本文は自由に入力できるようにしました。飲んだ時間とホット・コールドに関してはラジオボタンで入力しやすくしています。|あああ|
+## 技術構成
+### 使用技術
+| カテゴリー | 使用技術 |
+:----|:----
+| フロントエンド | Ruby on Rails  7.1.3.3, TailwindCSS, DaisyUI |
+| バックエンド | Ruby on Rails  7.1.3.3 (Ruby 3.2.3 )  |
+| インフラ | heroku / AmazonS3 |
+| DB | PostgreSQL |
+| 開発環境 | Docker |
+### 選定理由
+スクールのカリキュラムで学習しているRuby on Rails＋Dockerを使うことで、実装のスピードを上げられると考えました。TailwindCSSのライブラリであるDaisyUIのテーマを使用することで、統一感のあるアプリケーションにできそうだと感じたため、TailwindCSS及びDaisyUIを使用しました。
+### 技術面でのアピールポイント
+日々のコーヒーを写真とともに記録するためのアプリということで、レスポンシブ対応を最も重要な課題として開発を進めました。またラジオボタンを使用して直感的に入力がしやすいように実装しました。
+## Webアプリを開発するに至った経緯
+気軽に飲んだコーヒーの記録をできるアプリがあったらいいなと感じたことがきっかけです。ここ数ヶ月、ほぼ毎日豆を挽いてドリップコーヒーを入れています。せっかく毎日入れているのだから何か記録に残せたらいいなと思い、今回のアプリの作成に至りました。
+## このWebアプリならではのポイント
+「コーヒー」に関わることであれば自由に投稿できるアプリという点です。記録する内容は、コーヒーの入れ方でもいいですし、一緒に飲んだ人がいるのならそこでの会話を記録してもいいというように、ゆるっと自由な使い方ができるアプリとなっています。
