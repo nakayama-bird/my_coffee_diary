@@ -12,6 +12,10 @@ module ApplicationHelper
         page_title.empty? ? base_title : page_title + ' | ' + base_title
     end
 
+    def show_meta_tags
+        set_meta_tags(default_meta_tags)
+        display_meta_tags
+      end
 
     def default_meta_tags
         {
