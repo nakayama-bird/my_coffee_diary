@@ -12,15 +12,11 @@ module ApplicationHelper
         page_title.empty? ? base_title : page_title + ' | ' + base_title
     end
 
-    def show_meta_tags
-        set_meta_tags(default_meta_tags)
-        display_meta_tags
-      end
 
     def default_meta_tags
         {
-            site: '',
-            title: '',
+            site: 'My Coffee Diary',
+            title: '毎日のコーヒーを記録するアプリ',
             reverse: true,
             charset: 'utf-8',
             description: 'My Coffee Diaryは今日楽しんだコーヒーを記録するアプリです',
