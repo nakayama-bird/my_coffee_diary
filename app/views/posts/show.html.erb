@@ -11,7 +11,7 @@
                 <div class = "mr-6"><%= @post.decorate.drink_type_show %></div>
                 <div class = "mr-6"><%= @post.decorate.drink_time_show %></div>
                 <div class="twitter ml-auto">
-                    <%= link_to "https://twitter.com/share?url=#{post_url(@post)}&text=今日もコーヒーを楽しみました！ナイスコーヒー！&hashtags=MyCoffeeDiary", target: '_blank', data: { toggle: "tooltip", placement: "bottom" }, title: "Xでシェア" do %>
+                    <%= link_to "https://twitter.com/share?url=#{CGI.escape(root_url)}&text=今日もコーヒーを楽しみました！ナイスコーヒー！&hashtags=MyCoffeeDiary", target: '_blank', data: { toggle: "tooltip", placement: "bottom" }, title: "Xでシェア" do %>
                     <div class = 'btn btn-sm'>Xでシェア</div>
                         <% end %>
                 </div>
