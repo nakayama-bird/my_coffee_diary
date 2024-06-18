@@ -1,14 +1,14 @@
 # サービス名：My Coffee Diary
 ![ogp_page](app/assets/images/ogp.png)
 ## サービス概要
-毎日のコーヒーを気軽に記録することができるアプリケーションです。コーヒーの味、その時の気持ち、一緒に飲んだ相手などを写真とともに自由に記録できます。
+毎日のコーヒーを気軽に記録することができるアプリケーションです。コーヒーの味、その時の気持ち、一緒に飲んだ相手などを写真とともに「自由に」記録できます。
 ## サービスURL
 https://my-coffee-diary-beb5a70ee3d8.herokuapp.com/
 ## 機能紹介
 |投稿画面| マイページ |
 |:-:|:-:|
-|![top_new_page](app/assets/images/top_new.png)|![top_new_page](app/assets/images/top_new.png)
-タイトルや本文は自由に入力できるようにしました。飲んだ時間とホット・コールドに関してはラジオボタンで入力しやすくしています。|あああ|
+|![top_new_page](app/assets/images/top_new.png)|![top_new_mypage](app/assets/images/top_mypage.png)
+タイトルや本文は自由に入力できるようにしました。飲んだ時間とホット・コールドに関してはラジオボタンで入力しやすくしています。|自分が過去に飲んだコーヒーを振り返ることができます。豆の挽き方、美味しいお店のコーヒー、その時の思い出などを振り返ることができます。|
 ## 技術構成
 ### 使用技術
 | カテゴリー | 使用技術 |
