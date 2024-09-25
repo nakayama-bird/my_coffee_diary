@@ -1,6 +1,11 @@
-<footer class="footer footer-center p-4 bg-base-200 text-base-content">
+<footer class="footer footer-center bg-base-100 tent-base-content p-4">
+  <nav class="grid grid-flow-col gap-4">
+    <a class="link linkhover"></a>
+    <%= link_to "利用規約", term_path, class:"link link-hover" %>
+    <%= link_to "プライバシーポリシー", policy_path , class:"link link-hover" %>
+    <%= link_to "お問い合わせ先", "https://x.com/nakayama_tori", class:"link link-hover" %>
+  </nav>
   <aside>
-    <%= 'Copyright © 2024 MyCoffeeDiary - All right reserved' %>
-    <%= link_to "お問い合わせ", "https://x.com/nakayama_tori" %>
+    <p>© <%= Time.current.year %> My Coffee Diary  - All Rights Reserved.</p>
   </aside>
 </footer>
